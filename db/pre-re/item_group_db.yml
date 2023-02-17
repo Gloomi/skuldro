@@ -7475,3 +7475,41 @@ Body:
           - Item: Giant_Fly_Wing
           - Item: E_Giant_Fly_Wing
           - Item: F_Giant_Fly_Wing
+  - Group: REWARDBOX
+    SubGroups:
+      - SubGroup: 1
+        List:
+          - Item: Max_Weight_Up_Scroll
+            Rate: 1
+          - Item: Battle_Manual
+            Rate: 1
+          - Item: HE_Bubble_Gum
+            Rate: 1
+          - Item: Kafra_Card
+            Rate: 1
+          - Item: Token_Of_Siegfried
+            Rate: 1
+          - Item: Convex_Mirror
+            Rate: 1
+          - Item: Insurance
+            Rate: 1
+          - Item: Elite_Siege_Supply_Box
+            Rate: 1
+      - SubGroup: 2
+        List:
+          - Item: Max_Weight_Up_Scroll
+            Rate: 1
+          - Item: Battle_Manual
+            Rate: 1
+          - Item: HE_Bubble_Gum
+            Rate: 1
+          - Item: Kafra_Card
+            Rate: 1
+          - Item: Token_Of_Siegfried
+            Rate: 1
+          - Item: Convex_Mirror
+            Rate: 1
+          - Item: Insurance
+            Rate: 1
+          - Item: Elite_Siege_Supply_Box
+            Rate: 1
