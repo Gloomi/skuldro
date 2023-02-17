@@ -16,9 +16,14 @@
 
 prt_in,22,73,4	script	Bombur	826,{
 
-	set .zenycost,100000;    // base cost of the card remover services (in Zeny)
-	set .percardcost,20000;  // cost per card of the card remover services (in Zeny)
-
+	set .zenycost,1000000;    // base cost of the card remover services (in Zeny)
+	set .percardcost,100000;  // cost per card of the card remover services (in Zeny)
+	if ((countitem(100001)<1)) {
+		mes "[Bombur]";
+		mes "Piss off, kid!";
+		mes "I have no business for the likes of you.";
+		close;
+		}
 	disable_items;
 	mes "[Bombur]";
 	mes "I can disassemble any item you have compounded a card on risk free!";
@@ -72,7 +77,7 @@ prt_in,22,73,4	script	Bombur	826,{
 		next;
 		mes "Klang! Klang!";
 		set Zeny, Zeny - (.zenycost+(.@cardcount * .percardcost));
-		delitem 2000001,1;
+		delitem 100001,1;
 		next;
 		successremovecards .@part;
 		mes "[Bombur]";

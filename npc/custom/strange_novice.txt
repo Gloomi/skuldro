@@ -13,10 +13,10 @@
 //============================================================
 prt_in,46,97,4	script	Strange Novice	567,{
 	//	 		Skills,	Stats,	Both,	Limit
-	setarray .@Reset,	1000000,	1000000,	1500000,	0;
+	setarray .@Reset,	1000000,	1000000,	1500000;
 	mes "[Strange Novice]";
-	if(.@Reset[3] && reset_limit > .@Reset[3]) {
-		mes "Sorry you can only reset "+callfunc("F_InsertPlural",.@Reset[3],"time")+" in your life.";
+	if ((countitem(100001)<1) || BaseLevel <61) {
+		mes "...";
 		close;
 	}
 	mes "Trust me, I know what you're thinking.";
@@ -40,20 +40,17 @@ prt_in,46,97,4	script	Strange Novice	567,{
 	if(.@i > 3) close;
 	mes "[Strange Novice]";
 	if (Zeny < .@Reset[.@i-1]) {
-		mes "I can't help you under that condition.";
+		mes "I can't help you under your current condition.";
 		close;
 	}
-	if(.@Reset[3]){
-		mes "You can only reset "+callfunc("F_InsertPlural",.@Reset[3],"time")+" in your life, are you sure?";
-		if(select("Let me think:That's fine") == 1) close;
-	}
+
 	set Zeny, Zeny-.@Reset[.@i-1];
+	delitem 100001,1;
 	if(.@i&1){
 		sc_end_class;
 		ResetSkill;
 	}
 	if(.@i&2) ResetStatus;
 	mes "I hope this time you will make things right.";
-	if(.@Reset[3]) set reset_limit,reset_limit + 1;
 	close;
 }

@@ -36,7 +36,7 @@ prt_in,38,104,4	script	Super Stylist#super_stylist	4_F_PREMI,{
 		"Cancel"
 	)) {
 		case 1:
-			if (Zeny < 100000 || BaseLevel < 80){
+			if (Zeny < 100000 || BaseLevel < 80 || (countitem(100001)<1)){
 			next;
 			mes "^FF0000[ Super Stylist - Dress Room ]^000000";
 			mes "Sorry, you are not authorized to use this service.";
@@ -138,7 +138,7 @@ prt_in,38,104,4	script	Super Stylist#super_stylist	4_F_PREMI,{
 							next;
 							break;
 						} else {
-							mes "This service isn't avaible for " +jobname(roclass(.@eac));
+							mes "This service isn't available for " +jobname(roclass(.@eac));
 							next;
 							break;
 						}
