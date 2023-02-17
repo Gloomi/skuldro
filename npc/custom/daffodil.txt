@@ -1,0 +1,38 @@
+prt_in,44,113,4	script	Daffodil	729,{
+	if (BaseLevel > 60) {
+		mes "[Daffodil]";
+		mes "Hello! Lovely day isn't it?";
+		close;
+	}
+	mes "[Daffodil]";
+	mes "Hi! I offer free stat and skill reset";
+	mes "for your level bracket.";
+	next;
+	mes "[Daffodil]";
+	mes "Can I help you with anything?";
+	next;
+	switch(select("Reset Stats:Reset Skills:Reset Both:Nothing")) {
+	
+	case 1:
+		ResetStatus;
+		mes "[Daffodil]";
+		mes "All done! Have a good day!";
+		close;
+	case 2:
+		ResetSkill;
+		mes "[Daffodil]";
+		mes "All done! Have a good day!";
+		close;
+	case 3:
+		ResetStatus;
+		ResetSkill;
+		mes "[Daffodil]";
+		mes "All done! Have a good day!";
+		close;
+	case 4:
+		mes "[Daffodil]";
+		mes "All right then~";
+		mes "Just know that I am always here if you need my help.";
+		close;
+	}
+}
