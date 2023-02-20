@@ -7495,6 +7495,10 @@ Body:
             Rate: 1
           - Item: Elite_Siege_Supply_Box
             Rate: 1
+          - Item: Enriched_Elunium
+            Rate: 1
+          - Item: Enriched_Oridecon
+            Rate: 1
       - SubGroup: 2
         List:
           - Item: Max_Weight_Up_Scroll
@@ -7512,4 +7516,8 @@ Body:
           - Item: Insurance
             Rate: 1
           - Item: Elite_Siege_Supply_Box
+            Rate: 1
+          - Item: Enriched_Elunium
+            Rate: 1
+          - Item: Enriched_Oridecon
             Rate: 1
