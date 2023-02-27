@@ -4769,8 +4769,8 @@ Body:
     Hit: Multi_Hit
     HitCount: -8
     Element: Weapon
-    AfterCastActDelay: 2000
-    AfterCastWalkDelay: 2000
+    AfterCastActDelay: 1000
+    AfterCastWalkDelay: 1000
     Duration2: 5000
     CastDelayFlags:
       IgnoreStatus: true
