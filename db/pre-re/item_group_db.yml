@@ -7481,8 +7481,6 @@ Body:
         List:
           - Item: Max_Weight_Up_Scroll
             Rate: 1
-          - Item: Battle_Manual
-            Rate: 1
           - Item: HE_Bubble_Gum
             Rate: 1
           - Item: Kafra_Card
@@ -7492,32 +7490,26 @@ Body:
           - Item: Convex_Mirror
             Rate: 1
           - Item: Insurance
-            Rate: 1
-          - Item: Elite_Siege_Supply_Box
-            Rate: 1
-          - Item: Enriched_Elunium
-            Rate: 1
-          - Item: Enriched_Oridecon
             Rate: 1
       - SubGroup: 2
         List:
           - Item: Max_Weight_Up_Scroll
-            Rate: 1
-          - Item: Battle_Manual
-            Rate: 1
+            Rate: 2
           - Item: HE_Bubble_Gum
-            Rate: 1
+            Rate: 2
           - Item: Kafra_Card
-            Rate: 1
+            Rate: 2
           - Item: Token_Of_Siegfried
-            Rate: 1
+            Rate: 2
           - Item: Convex_Mirror
-            Rate: 1
+            Rate: 2
           - Item: Insurance
-            Rate: 1
+            Rate: 2
           - Item: Elite_Siege_Supply_Box
             Rate: 1
           - Item: Enriched_Elunium
             Rate: 1
           - Item: Enriched_Oridecon
+            Rate: 1
+          - Item: Gold_Coin
             Rate: 1
