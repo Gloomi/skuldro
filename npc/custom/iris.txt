@@ -13,21 +13,22 @@
 //= 1.1 Switched to 'getbattleflag', credits to Saithis. [Euphy]
 //============================================================
 
-prt_in,41,115,4	script	Iris#custom_stylist	408,{
+prt_in,46,97,2	script	Iris#custom_stylist	408,{
 	mes "[Iris]";
-	mes "The fee for this service is 1 Gold Coin.";
+	//mes "The fee for this service is 1 Gold Coin.";
+	mes "This service is currently offered free for the weekend.";
 	next;
 	mes "[Iris]";
 	mes "Would you like to continue?";
 	next;
 	switch(select("Yes:Leave")){
 	case 1:
-		if ((countitem(671)<1)) {
-		mes "[Iris]";
-		mes "Sorry but you need to pay the fee to access this service.";
-		close;
-		}
-	delitem 671,1;
+		//if ((countitem(671)<1)) {
+		//mes "[Iris]";
+		//mes "Sorry but you need to pay the fee to access this service.";
+		//close;
+		//}
+	//delitem 671,1;
 	setarray .@Styles[1],
 		23,
 		getbattleflag("max_hair_color");
